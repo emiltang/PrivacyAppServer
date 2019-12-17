@@ -13,5 +13,6 @@ class PrivacyWarningController(val privacyWarningRepository: PrivacyWarningRepos
     fun post(@RequestBody privacyWarning: PrivacyWarning) {
         println(privacyWarning)
         privacyWarningRepository.save(privacyWarning)
+        println("Received: $privacyWarning")
     }
 }
